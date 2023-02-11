@@ -2,19 +2,59 @@
 <html>
   <head>
     <title>Contact US</title>
+    <style>
+body {
+    background-color: antiquewhite;
+}
+h1{
+  text-align: center;
+  color: blue;
+}
+#item1{
+  color: black;
+  margin-right: 250px;
+  /* margin-left: 50px; */
+}
+#item2{
+  color: black;
+  /* margin-right: 500px; */
+  /* margin-left: 100px; */
+}
+#item4{
+  color: black;
+  margin-left: 120px;
+  /* margin-left: 50px; */
+}
+.item{
+  margin-bottom: 20px;
+  margin-left: 100px;
+}
+#item3{
+  color: black;
+  margin-left: 150px;
+}
+
+    </style>
     
   </head>
 
   <body>
-    <h2>Contact US</h2>
+    <h1>Contact US</h1>
     <form action="backend.php">
-      Full Name:<input type="text" name="myname" placeholder="Max char length 10" /><br><br> 
-      Mobile No:<input type="number" name="mynumber" /><br><br> 
-      Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="mymail" placeholder="Ex.abc@gmail.com" /><br><br>
-      Enquiry:&nbsp;&nbsp;&nbsp;<textarea name="myenquiry" cols="30" rows="10"> </textarea><br>
+      Frist Name:<input type="text" id="item1" class="item" name="myname" placeholder="Max char length 10" /> 
+      <br>
+      Last name:<input type="text" id="item2" class="item" name="mylastname" placeholder="Max char length 10"/>
+      <br>
+      Mobile No:<input type="number" class="item" name="mynumber" /> <br>
+
+      Email:<input type="email" class="item" id="item4" name="mymail" placeholder="Ex.abc@gmail.com" />
+      <br>
+      Enquiry: <br><textarea class="item" id="item3" name="myenquiry" cols="100" rows="10" placeholder="Min char 100"> </textarea>
+
+      <br>
+      <button type="submit" class="item" value="Submit">Submit</button>
       
-      <button type="submit" value="Submit">Submit</button>
-      <button type="reset" value="Reset">Reset</button>
+      <button type="reset" class="item" value="Reset">Reset</button>
     </form>
 
   </body>
